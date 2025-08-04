@@ -1,4 +1,13 @@
 packages:
-  - "client"
-  - "server"
-  - "shared"
+  - client
+  - server
+  - shared
+
+
+onlyBuiltDependencies:
+  - better-sqlite3
+  - esbuild
+
+public-hoist-pattern:
+  - "*@nextui-org/*"
+  - "*eslint*"
